@@ -1,7 +1,7 @@
 class Song < ActiveRecord::Base
   # add associations here
   belongs_to :artist
-  belogs_to :genre
+  belongs_to :genre
   has_many :notes
 
   def artist_name=(name)
